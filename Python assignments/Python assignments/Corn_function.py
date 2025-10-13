@@ -35,8 +35,8 @@ print(add_ing_at_end(collect1))
 
 my_list = []
 index = 0
-for _ in range(0,7):
-	index += 0
+for _ in range(0,6):
+	index += 1
 	collect2 = input("Enter a word: ")
 	my_list.append(collect2)
 	
@@ -51,7 +51,7 @@ def longest_and_length_of_the_longest_word(prompt):
 #print(longest_and_length_of_the_longest_word(collect2)) 
 
 
-collect8 = input('Enter a word: ')
+#collect8 = input('Enter a word: ')
 
 def take_and_remove_characters_with_odd_index(prompt):
 	my_list = []
@@ -61,10 +61,33 @@ def take_and_remove_characters_with_odd_index(prompt):
 			return my_list[letter]
 				
 				
-print(take_and_remove_characters_with_odd_index(collect8))
+#print(take_and_remove_characters_with_odd_index(collect8))
 
 
 
+def return_minimum_number(prompt):
+	minimum = prompt[0]
+	count = 0
+	for _ in prompt:
+		if prompt[count] < minimum:
+			minimum = prompt[count]
+		count += 1
+	return minimum
+my_list = [4,4,3,5,5, -100,555]
+print(return_minimum_number(my_list))
+	
 
+
+def return_maximum_number(prompt):
+	maximum = prompt[0]
+	count = 0
+	for _ in prompt:
+		if prompt[count] > maximum:
+			maximum = prompt[count]
+		count += 1
+	return maximum
+my_list = [4,4,3,5,5, -100,555]
+print(return_maximum_number(my_list))
+	
 
 
