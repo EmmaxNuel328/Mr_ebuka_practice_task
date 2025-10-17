@@ -9,6 +9,7 @@ Menu = """
 """;
 print(Menu)
 prompt = -1
+index = 0
 while prompt != "0" :
 	prompt = input("Enter from the above menu: ")
 	match(prompt): 
@@ -17,12 +18,16 @@ while prompt != "0" :
 			balance = deposit(deposit_amount,balance)
 			print("N",balance)
 			transaction.append(f"Deposited: N{deposit_amount}| New Balance: N{balance}")
-			print(transaction)
+			print(transaction[index])
+			index += 1
 		case "2" :
 			withdraw_amount = float(input("Enter amount to withdraw: "))
 			balance = withdraw(withdraw_amount,balance)
 			print(balance)
-		case "0" : print("Thank yoy for using Transaction Log App")
+		case "3" :
+			print(transaction,"\n")
+		case "0" : 
+			print("Thank yoy for using Transaction Log App")
 			
 
 
