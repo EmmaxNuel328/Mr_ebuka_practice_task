@@ -5,7 +5,8 @@ import Book_suggestion_function
 class TestBookSuggestion(unittest.TestCase):
 	def test_that_suggest_book_function_exist(self):
 		Book_suggestion_function.suggest_book("suggested_book")
-	def test_suggest_book
+	def test_suggest_book_returns_book(self):
+		
 	def test_that_add_books_function_exist(self):
 		Book_suggestion_function.add_books("prompt,book_list = []")
 	def test_that_remove_books_function_exist(self):
