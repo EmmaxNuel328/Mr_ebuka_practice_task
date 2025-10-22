@@ -19,6 +19,10 @@ class TestBackToSenderFunction(unittest.TestCase):
 		self.assertEqual(actual_4,expected_4)
 	def test_that_get_wage_function_raise_type_error_for_strings(self):
 		actual = "Emmax"
-		actual_2 = -1  
 		self.assertRaises(TypeError,actual)
-		self.assertRaises(TypeError,actual_2)
+	def test_that_get_wage_raise_value_error_for_input_greater_than_100(self):
+		actual = 101
+		actual_2 = -1  
+		self.assertRaises(ValueError)
+		self.assertRaises(ValueError)
+		

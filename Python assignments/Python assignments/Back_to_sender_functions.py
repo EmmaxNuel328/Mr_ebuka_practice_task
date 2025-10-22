@@ -9,6 +9,8 @@ def get_wage(prompt):
 		wage = (prompt * 500) + 5000
 	if type(prompt) == str:
 		raise TypeError ("INVALID INPUT")
+	if prompt > 100:
+		raise ValueError ("INVALID INPUT!!!")
 	return wage 
 	
 	
