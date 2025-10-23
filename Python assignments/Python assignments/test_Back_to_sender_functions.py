@@ -23,6 +23,6 @@ class TestBackToSenderFunction(unittest.TestCase):
 	def test_that_get_wage_raise_value_error_for_input_greater_than_100(self):
 		actual = 101
 		actual_2 = -1  
-		self.assertRaises(ValueError)
-		self.assertRaises(ValueError)
+		self.assertRaises(ValueError,get_wage,actual)
+		self.assertRaises(ValueError,get_wage,actual)
 		
