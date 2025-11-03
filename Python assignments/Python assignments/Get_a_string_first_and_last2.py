@@ -1,0 +1,1 @@
+collect = input("Enter a word: ")
