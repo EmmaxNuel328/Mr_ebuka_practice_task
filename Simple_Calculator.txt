@@ -1,0 +1,12 @@
+prompt_1 = int(input("Enter first number: "))
+prompt_2 = int(input("Enter second number: "))
+prompt_3 = input("Choose operation add(+),subtract(-)")
+def add(prompt_1,prompt_2):
+	if prompt_3 == "+":
+		return prompt1 + prompt2
+	sum = prompt1 + prompt2
+	print(sum)
+	if prompt_3 == "-":
+		return prompt1 - prompt2
+	subtract = prompt1 - prompt2
+	print(subtract)

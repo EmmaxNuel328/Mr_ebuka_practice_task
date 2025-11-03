@@ -1,0 +1,3 @@
+for numbers in range(10)
+	number = numbers + 1
+	print(number)
